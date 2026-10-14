@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="長崎県病院協議会">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b4f8a"/>
+      <stop offset="1" stop-color="#1aa39a"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="23" fill="url(#g)"/>
+  <path d="M20 11h8v9h9v8h-9v9h-8v-9h-9v-8h9z" fill="#fff"/>
+  <path d="M6 33c5-3 9-3 13 0s9 3 13 0 9-3 10-1" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お知らせ｜長崎県病院協議会</title>
+  <meta name="description" content="長崎県病院協議会からのお知らせ、会議・行事、研修会、行政情報を掲載しています。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img class="logo-mark" src="images/logo.svg" alt="" width="44" height="44">
+        <span class="logo-text">
+          <strong>長崎県病院協議会</strong>
+          <small>Nagasaki Hospital Association</small>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">協議会概要</a></li>
+          <li><a href="news.html" aria-current="page">お知らせ</a></li>
+          <li><a class="nav-contact" href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <span class="en">News</span>
+        <h1>お知らせ</h1>
+      </div>
+    </div>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">トップ</a></li>
+          <li aria-current="page">お知らせ</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="section" aria-label="お知らせ一覧">
+      <div class="container">
+        <div class="news-filter" role="group" aria-label="カテゴリで絞り込み">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">すべて</button>
+          <button class="filter-btn" type="button" data-filter="notice" aria-pressed="false">お知らせ</button>
+          <button class="filter-btn" type="button" data-filter="event" aria-pressed="false">会議・行事</button>
+          <button class="filter-btn" type="button" data-filter="training" aria-pressed="false">研修会</button>
+          <button class="filter-btn" type="button" data-filter="info" aria-pressed="false">行政情報</button>
+        </div>
+
+        <ul class="news-list" id="news-list" aria-live="polite">
+          <!-- js/news-data.js から自動生成 -->
+        </ul>
+        <p class="news-empty" hidden>該当するお知らせはありません。</p>
+        <nav class="pagination" aria-label="ページ送り"></nav>
+
+        <noscript>
+          <p class="news-empty">お知らせを表示するにはJavaScriptを有効にしてください。</p>
+        </noscript>
+      </div>
+    </section>
+
+    <div class="modal" id="news-modal" role="dialog" aria-modal="true" aria-labelledby="news-modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <button class="modal-close" type="button" aria-label="閉じる">&times;</button>
+        <div class="modal-meta"></div>
+        <h2 id="news-modal-title"></h2>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <img class="logo-mark" src="images/logo.svg" alt="" width="44" height="44">
+          <span class="logo-text">
+            <strong>長崎県病院協議会</strong>
+            <small>Nagasaki Hospital Association</small>
+          </span>
+        </a>
+        <address class="footer-address">
+          〒850-0000 長崎県長崎市〇〇町0番0号 〇〇ビル0階<br>
+          TEL：095-000-0000 ／ FAX：095-000-0001<br>
+          受付時間：平日 9:00〜17:00（土日祝・年末年始を除く）
+        </address>
+      </div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="about.html">協議会概要</a>
+        <a href="news.html">お知らせ</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="about.html#access">アクセス</a>
+        <a href="contact.html#privacy">個人情報の取扱い</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <small>&copy; <span id="copyright-year">2026</span> 長崎県病院協議会 All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <button class="page-top" type="button" aria-label="ページの先頭へ戻る">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/news-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
